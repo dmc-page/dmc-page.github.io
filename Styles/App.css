@@ -1,0 +1,102 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: black;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+body {
+    font-family: 'Segoe UI', sans-serif;
+}
+
+video,
+.overlay-container {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.overlay-container {
+    display: flex;
+    padding: 1rem;
+}
+.overlay,
+.panel-container,
+.sub-panel-container {
+    display: flex;
+    flex: 1;
+}
+.overlay,
+.panel-container {
+    flex-wrap: wrap;
+}
+.overlay {
+    flex-direction: row;
+}
+.panel-container,
+.sub-panel-container {
+    flex-direction: column;
+    width: 100%;
+}
+.left,
+.left > .sub-panel-container {
+    align-items: flex-start;
+}
+.right,
+.right > .sub-panel-container {
+    align-items: flex-end;
+}
+.top {
+    justify-content: flex-start;
+}
+.bottom {
+    justify-content: flex-end;
+}
+
+.panel {
+    margin: 0.5rem;
+    background-color: #666666;
+    background-color: #666666aa;
+    color: white;
+
+    padding: 0.5em;
+
+    min-width: 12rem;
+    
+    box-shadow: 0.125rem 0.125rem 0.25rem #333333;
+    box-shadow: 0.125rem 0.125rem 0.25rem #33333366;
+
+    backdrop-filter: blur(2px);
+
+    border: 1px solid #333333;
+    border: 1px solid #33333333;
+
+    align-self: stretch;
+}
+.panel.error-view {
+    border: none;
+    border-radius: 0;
+    width: 100%;
+
+    opacity: 0.75;
+    align-self: stretch;
+}
+
+button.panel {
+    font-weight: bold;
+    font-size: 1em;
+    text-align: left;
+    border-radius: 1em;
+    align-self: auto;
+
+    text-transform: uppercase;
+}
