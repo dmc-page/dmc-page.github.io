@@ -1,0 +1,10 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "xyz.appmaker.qwevix",
+      "sha256_cert_fingerprints": ["43:88:CD:3E:64:98:F0:FE:22:0E:10:38:AD:EA:39:C1:9B:89:40:9D:F1:BB:3D:3E:DC:70:F3:06:BF:4E:48:AD"]
+    }
+  }
+]
